@@ -1,4 +1,4 @@
-# Uncomment this line to define a global platform for your project
+s line to define a global platform for your project
 
 source 'https://github.com/CocoaPods/Specs.git'
 #source 'https://github.com/Artsy/Specs.git'
