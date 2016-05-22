@@ -11,4 +11,5 @@ workspace 'myphotoalbum.xcworkspace'
 
 target 'myphotoalbum' do
     pod 'iCarousel'
+    pod 'Masonry'
 end

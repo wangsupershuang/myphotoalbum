@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		59C5FAEF872082003E0CC48B /* libPods-myphotoalbum.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE3273353BE65C0E90A013E9 /* libPods-myphotoalbum.a */; };
 		7DACD8CF1CE5840100F5F189 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DACD8CE1CE5840100F5F189 /* Assets.xcassets */; };
+		C6633E9A1CF2020C00180F1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6633E981CF2020C00180F1A /* AppDelegate.swift */; };
+		C6633E9B1CF2020C00180F1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6633E991CF2020C00180F1A /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +19,9 @@
 		7DACD8D31CE5840100F5F189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99748751D8354525957B4108 /* Pods-myphotoalbum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myphotoalbum.release.xcconfig"; path = "Pods/Target Support Files/Pods-myphotoalbum/Pods-myphotoalbum.release.xcconfig"; sourceTree = "<group>"; };
 		AE3273353BE65C0E90A013E9 /* libPods-myphotoalbum.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-myphotoalbum.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6633E971CF2020B00180F1A /* myphotoalbum-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "myphotoalbum-Bridging-Header.h"; sourceTree = "<group>"; };
+		C6633E981CF2020C00180F1A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C6633E991CF2020C00180F1A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E21849DD5F28B9BC16613DA1 /* Pods-myphotoalbum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myphotoalbum.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myphotoalbum/Pods-myphotoalbum.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,6 +57,9 @@
 		7D3FAFE01CE9774E00FC4737 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C6633E981CF2020C00180F1A /* AppDelegate.swift */,
+				C6633E991CF2020C00180F1A /* ViewController.swift */,
+				C6633E971CF2020B00180F1A /* myphotoalbum-Bridging-Header.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -212,6 +220,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6633E9B1CF2020C00180F1A /* ViewController.swift in Sources */,
+				C6633E9A1CF2020C00180F1A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,10 +316,13 @@
 			baseConfigurationReference = E21849DD5F28B9BC16613DA1 /* Pods-myphotoalbum.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = myphotoalbum/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.cq.myphotoalbum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "myphotoalbum/src/Classes/myphotoalbum-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -318,10 +331,12 @@
 			baseConfigurationReference = 99748751D8354525957B4108 /* Pods-myphotoalbum.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = myphotoalbum/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.cq.myphotoalbum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "myphotoalbum/src/Classes/myphotoalbum-Bridging-Header.h";
 			};
 			name = Release;
 		};
