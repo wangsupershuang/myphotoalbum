@@ -12,4 +12,7 @@ workspace 'myphotoalbum.xcworkspace'
 target 'myphotoalbum' do
     pod 'iCarousel'
     pod 'Masonry'
+    pod 'CocoaLumberjack/Swift'
+    use_frameworks!
+    pod 'FMDB'
 end
