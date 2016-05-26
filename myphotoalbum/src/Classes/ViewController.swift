@@ -13,12 +13,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        DDLog.addLogger(DDTTYLogger.sharedInstance()) // TTY = Xcode console
-        DDLog.addLogger(DDASLLogger.sharedInstance()) // ASL = Apple System Logs
-        
-        
-        
+        DDLogVerbose("Verbose");
+        DDLogDebug("Debug");
+        DDLogInfo("Info");
+        DDLogWarn("Warn");
+        DDLogError("Error");
+        self.view.backgroundColor=UIColor.redColor()
     }
 
     override func didReceiveMemoryWarning() {

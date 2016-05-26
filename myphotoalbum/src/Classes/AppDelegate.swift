@@ -7,9 +7,7 @@
 //
 
 import UIKit
-import ViewController
-
-
+import CocoaLumberjack
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,11 +16,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        DDLog.addLogger(DDTTYLogger.sharedInstance()) // TTY = Xcode console
+        DDLog.addLogger(DDASLLogger.sharedInstance()) // ASL = Apple System Logs
+        
+        
+        
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        self.window!.backgroundColor = UIColor.whiteColor()
-        let viewController=ViewController();
-        
-        
+        self.window!.backgroundColor = UIColor.clearColor()
+        let viewC=ViewController()
+        self.window?.rootViewController=viewC
+        self.window?.makeKeyAndVisible()
         return true
     }
 
