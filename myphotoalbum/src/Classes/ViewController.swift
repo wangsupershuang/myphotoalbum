@@ -18,7 +18,6 @@ class ViewController: UIViewController {
         DDLogInfo("Info");
         DDLogWarn("Warn");
         DDLogError("Error");
-        self.view.backgroundColor=UIColor.redColor()
     }
 
     override func didReceiveMemoryWarning() {

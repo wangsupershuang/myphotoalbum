@@ -318,6 +318,7 @@
 			baseConfigurationReference = E21849DD5F28B9BC16613DA1 /* Pods-myphotoalbum.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -327,6 +328,7 @@
 					"\"${PODS_ROOT}/Headers/Public/iCarousel\"",
 				);
 				INFOPLIST_FILE = myphotoalbum/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.cq.myphotoalbum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -340,6 +342,7 @@
 			baseConfigurationReference = 99748751D8354525957B4108 /* Pods-myphotoalbum.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -349,6 +352,7 @@
 					"\"${PODS_ROOT}/Headers/Public/iCarousel\"",
 				);
 				INFOPLIST_FILE = myphotoalbum/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.cq.myphotoalbum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
