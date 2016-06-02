@@ -11,7 +11,7 @@ PODS:
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
   - iCarousel (1.8.1)
-  - Masonry (1.0.0)
+  - Masonry (1.0.1)
 
 DEPENDENCIES:
   - CocoaLumberjack/Swift
@@ -25,6 +25,6 @@ SPEC CHECKSUMS:
   EZSwiftExtensions: db7be0022fce8e92cdfe0fadddaf835fcd9696db
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   iCarousel: dace1cb858e3f4dc2614bee3201041247f82feda
-  Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
 
 COCOAPODS: 0.39.0

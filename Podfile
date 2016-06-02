@@ -11,12 +11,11 @@ xcodeproj 'myphotoalbum.xcodeproj'
 workspace 'myphotoalbum.xcworkspace'
 
 target 'myphotoalbum' do
-    use_frameworks!
     pod 'iCarousel','1.8.1'
     pod 'Masonry'
     pod 'EZSwiftExtensions'
     pod 'CocoaLumberjack/Swift'
-    
-    
     pod 'FMDB'
+    
+    use_frameworks!
 end

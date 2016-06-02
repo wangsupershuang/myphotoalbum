@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A4FA5D7DCF3890690E129FB /* Pods_myphotoalbum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE534C512D5B1FDD95BEB64A /* Pods_myphotoalbum.framework */; };
+		2C1E483E75FE72BBC65C795D /* Pods_myphotoalbum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C81E6EEF53C0E5A7B5AAD5 /* Pods_myphotoalbum.framework */; };
 		7DACD8CF1CE5840100F5F189 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DACD8CE1CE5840100F5F189 /* Assets.xcassets */; };
+		7DD4CBD31CFC4C96009C7266 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD4CBD21CFC4C96009C7266 /* Common.swift */; };
 		C6633E9A1CF2020C00180F1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6633E981CF2020C00180F1A /* AppDelegate.swift */; };
-		C6633E9B1CF2020C00180F1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6633E991CF2020C00180F1A /* ViewController.swift */; };
+		C6633E9B1CF2020C00180F1A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6633E991CF2020C00180F1A /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,11 +19,12 @@
 		7DACD8C41CE5840100F5F189 /* myphotoalbum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myphotoalbum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DACD8CE1CE5840100F5F189 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DACD8D31CE5840100F5F189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DD4CBD21CFC4C96009C7266 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		99748751D8354525957B4108 /* Pods-myphotoalbum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myphotoalbum.release.xcconfig"; path = "Pods/Target Support Files/Pods-myphotoalbum/Pods-myphotoalbum.release.xcconfig"; sourceTree = "<group>"; };
+		B4C81E6EEF53C0E5A7B5AAD5 /* Pods_myphotoalbum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myphotoalbum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6633E971CF2020B00180F1A /* myphotoalbum-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "myphotoalbum-Bridging-Header.h"; sourceTree = "<group>"; };
 		C6633E981CF2020C00180F1A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C6633E991CF2020C00180F1A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DE534C512D5B1FDD95BEB64A /* Pods_myphotoalbum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myphotoalbum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6633E991CF2020C00180F1A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E21849DD5F28B9BC16613DA1 /* Pods-myphotoalbum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myphotoalbum.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myphotoalbum/Pods-myphotoalbum.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -31,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A4FA5D7DCF3890690E129FB /* Pods_myphotoalbum.framework in Frameworks */,
+				2C1E483E75FE72BBC65C795D /* Pods_myphotoalbum.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				C6633E981CF2020C00180F1A /* AppDelegate.swift */,
-				C6633E991CF2020C00180F1A /* ViewController.swift */,
+				C6633E991CF2020C00180F1A /* MainViewController.swift */,
 				C6633E971CF2020B00180F1A /* myphotoalbum-Bridging-Header.h */,
 				7D5502731CF59E8800DBD9E5 /* MyPlayground.playground */,
+				7DD4CBD21CFC4C96009C7266 /* Common.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -97,7 +100,7 @@
 		8068060E8B3F1F698B0610D9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DE534C512D5B1FDD95BEB64A /* Pods_myphotoalbum.framework */,
+				B4C81E6EEF53C0E5A7B5AAD5 /* Pods_myphotoalbum.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -222,7 +225,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6633E9B1CF2020C00180F1A /* ViewController.swift in Sources */,
+				C6633E9B1CF2020C00180F1A /* MainViewController.swift in Sources */,
+				7DD4CBD31CFC4C96009C7266 /* Common.swift in Sources */,
 				C6633E9A1CF2020C00180F1A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,6 +324,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
@@ -344,6 +349,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",

@@ -9,23 +9,26 @@
 import UIKit
 import CocoaLumberjack
 
+
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var rootNav:UINavigationController!
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         DDLog.addLogger(DDTTYLogger.sharedInstance()) // TTY = Xcode console
         DDLog.addLogger(DDASLLogger.sharedInstance()) // ASL = Apple System Logs
         
-        
-        
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         self.window!.backgroundColor = UIColor.clearColor()
-        let viewC=ViewController()
-        let navigationController = UINavigationController(rootViewController: viewC)
-        self.window?.rootViewController=navigationController
+        
+        rootNav = UINavigationController(rootViewController: MainViewController())
+        rootNav.navigationBarHidden=true
+        self.window?.rootViewController=rootNav
         self.window?.makeKeyAndVisible()
         return true
     }
