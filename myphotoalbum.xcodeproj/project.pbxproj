@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2C1E483E75FE72BBC65C795D /* Pods_myphotoalbum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C81E6EEF53C0E5A7B5AAD5 /* Pods_myphotoalbum.framework */; };
+		7D6BCFEA1D01317F003A6E2D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6BCFE91D01317F003A6E2D /* BaseViewController.swift */; };
 		7DACD8CF1CE5840100F5F189 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DACD8CE1CE5840100F5F189 /* Assets.xcassets */; };
 		7DD4CBD31CFC4C96009C7266 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD4CBD21CFC4C96009C7266 /* Common.swift */; };
 		C6633E9A1CF2020C00180F1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6633E981CF2020C00180F1A /* AppDelegate.swift */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		7D5502731CF59E8800DBD9E5 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		7D6BCFE91D01317F003A6E2D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		7DACD8C41CE5840100F5F189 /* myphotoalbum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myphotoalbum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DACD8CE1CE5840100F5F189 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DACD8D31CE5840100F5F189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 		7D3FAFE01CE9774E00FC4737 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				7D6BCFE91D01317F003A6E2D /* BaseViewController.swift */,
 				C6633E981CF2020C00180F1A /* AppDelegate.swift */,
 				C6633E991CF2020C00180F1A /* MainViewController.swift */,
 				C6633E971CF2020B00180F1A /* myphotoalbum-Bridging-Header.h */,
@@ -226,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6633E9B1CF2020C00180F1A /* MainViewController.swift in Sources */,
+				7D6BCFEA1D01317F003A6E2D /* BaseViewController.swift in Sources */,
 				7DD4CBD31CFC4C96009C7266 /* Common.swift in Sources */,
 				C6633E9A1CF2020C00180F1A /* AppDelegate.swift in Sources */,
 			);

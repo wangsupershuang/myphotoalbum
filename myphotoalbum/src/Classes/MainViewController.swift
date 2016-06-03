@@ -10,7 +10,7 @@ import UIKit
 import CocoaLumberjack
 import iCarousel
 
-class MainViewController: UIViewController {
+class MainViewController: BaseViewController,iCarouselDelegate,iCarouselDataSource {
 
     var items: [Int] = []
     
@@ -28,13 +28,18 @@ class MainViewController: UIViewController {
             items.append(i)
         }
 //
-        let carousel:iCarousel=iCarousel(frame: self.view.frame);
+        let carousel:iCarousel=iCarousel(frame: UIScreen.mainScreen().bounds);
         
-////        self.carousel.delegate = self;
-////        self.carousel.dataSource = self;
-////        self.carousel.type = iCarouselTypeCustom;
-////        self.carousel.bounceDistance = 0.2f;
+//        self.carousel = [[iCarousel alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//        [self.view addSubview:self.carousel];
+//        self.carousel.delegate = self;
+//        self.carousel.dataSource = self;
+//        self.carousel.type = iCarouselTypeCustom;
+//        self.carousel.bounceDistance = 0.2f;
+//        self.carousel.viewpointOffset = CGSizeMake(-cardWidth/5.0f, 0);
         carousel.type = .CoverFlow2
+        carousel.delegate=self;
+        carousel.dataSource=self;
         self.view.addSubview(carousel)
         
 //        let btn1:UIButton!=UIButton(type: UIButtonType.Custom)
